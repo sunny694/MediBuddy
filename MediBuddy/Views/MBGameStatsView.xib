@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DrukWide-Bold.ttf">
+            <string>DrukWideApp-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MBGameStatsView" customModule="MediBuddy" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="2x2-bV-tTh"/>
+                <outlet property="iconImage" destination="3c5-LD-8EN" id="1M0-l0-4N3"/>
+                <outlet property="titleLabel" destination="ujD-o7-AHO" id="wPo-Pz-0Fr"/>
+                <outlet property="valueLabel" destination="qE0-9P-x03" id="omP-k0-LSA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="189" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0u-h8-NAu">
+                    <rect key="frame" x="70" y="51.666666666666664" width="49" height="101.66666666666669"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3c5-LD-8EN">
+                            <rect key="frame" x="13.666666666666671" y="0.0" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="0Ys-bO-k1I"/>
+                                <constraint firstAttribute="width" constant="22" id="G0h-mh-UZC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="qE0-9P-x03">
+                            <rect key="frame" x="0.0" y="38.000000000000007" width="49" height="29.999999999999993"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="eNa-sT-tA2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DrukWideApp-Bold" family="Druk Wide App" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujD-o7-AHO">
+                            <rect key="frame" x="0.0" y="78" width="49" height="23.666666666666671"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="3c5-LD-8EN" firstAttribute="centerX" secondItem="u0u-h8-NAu" secondAttribute="centerX" id="D4l-z2-WjA"/>
+                        <constraint firstItem="3c5-LD-8EN" firstAttribute="top" secondItem="u0u-h8-NAu" secondAttribute="top" id="Hc1-WS-MMZ"/>
+                        <constraint firstAttribute="trailing" secondItem="ujD-o7-AHO" secondAttribute="trailing" id="KIJ-GT-TcM"/>
+                        <constraint firstItem="qE0-9P-x03" firstAttribute="leading" secondItem="u0u-h8-NAu" secondAttribute="leading" id="WQ3-e7-80g"/>
+                        <constraint firstAttribute="bottom" secondItem="ujD-o7-AHO" secondAttribute="bottom" id="cOx-VL-j5Y"/>
+                        <constraint firstItem="qE0-9P-x03" firstAttribute="top" secondItem="3c5-LD-8EN" secondAttribute="bottom" constant="16" id="dEx-V0-gOy"/>
+                        <constraint firstItem="ujD-o7-AHO" firstAttribute="leading" secondItem="u0u-h8-NAu" secondAttribute="leading" id="gnZ-p3-qvQ"/>
+                        <constraint firstItem="ujD-o7-AHO" firstAttribute="top" secondItem="qE0-9P-x03" secondAttribute="bottom" constant="10" id="jjX-ZO-jSW"/>
+                        <constraint firstAttribute="trailing" secondItem="qE0-9P-x03" secondAttribute="trailing" id="kYD-KG-ogw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="u0u-h8-NAu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="CqR-Ka-uDu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u0u-h8-NAu" secondAttribute="trailing" constant="16" id="G0x-sa-MXa"/>
+                <constraint firstItem="u0u-h8-NAu" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="NEW-B0-QhC"/>
+                <constraint firstItem="u0u-h8-NAu" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="RVx-Qo-Utk"/>
+                <constraint firstItem="u0u-h8-NAu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="fvI-Gk-Pyo"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="u0u-h8-NAu" secondAttribute="bottom" constant="16" id="g8m-tl-gvy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-37.404580152671755" y="-109.85915492957747"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
